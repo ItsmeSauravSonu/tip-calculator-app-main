@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 58vh; /* 50% of the viewport height */
+    max-height: 350px; /* Set a maximum height if needed */
+    background: hsl(0, 0%, 100%);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 75%; /* 75% of the viewport width */
+    max-width: 600px; /* Set a maximum width if needed */
+    border-radius: 20px;
+    color: hsl(183, 100%, 15%);
+}
+div.main {
+    filter: drop-shadow(5px 5px 10px #44444d81);
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.btnx{
+    height: 30px;
+    border: none;
+    padding: 0;
+    background:hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btnx:hover {
+    background: rgb(16, 214, 194);
+    color: hsl(183, 100%, 15%); /* Change the text color on hover */
+}
+.btnx1{
+    height: 30px;
+    border: none;
+    padding: 0;
+    background:rgb(209,253,255);
+    color:hsl(183, 100%, 15%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputx1 {
+    display: none;
+    height: 30px;
+    width: 75px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color:hsl(189, 41%, 97%); 
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+  }
+
+  .centered-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+.btn-reset{
+    margin-top:145px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background:rgb(16, 214, 194);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    color:hsl(183, 100%, 15%);
+}
+
+@media screen and (max-width: 768px) {
+    /* Add responsive styles for smaller screens */
+    .btn-reset {
+     margin-bottom: 40px;
+    }
+}
+.flexible-input {
+    width: calc(100% - 30px); /* Adjust the width to accommodate the image */
+            padding-left: 30px; /* Adjust the padding to make space for the image */
+            border: none;
+            background-color: hsl(189, 41%, 97%);
+            color: hsl(183, 100%, 15%);
+            border-radius: 4px;
+            text-align: right;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Space Mono', monospace;
+            outline: none;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+#logodollar {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.flexible-input-person {
+    /* width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    background-color:hsl(189, 41%, 97%); 
+    color: hsl(183, 100%, 15%);
+    border-radius: 4px;
+    text-align: right;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace; */
+            width: calc(100% - 30px); /* Adjust the width to accommodate the image */
+            padding-left: 30px; /* Adjust the padding to make space for the image */
+            margin-bottom: 10px;
+            border: none;
+            background-color: hsl(189, 41%, 97%);
+            color: hsl(183, 100%, 15%);
+            border-radius: 4px;
+            text-align: right;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Space Mono', monospace;
+            outline: none;
+}
+.left-part{
+    margin:25px;
+    padding:5px;
+    
+    /* background-color:rgb(209,253,255);  */
+}
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    padding:5px;
+    color:hsl(0, 0%, 100%);
+    background-color:hsl(183, 100%, 15%); 
+    border-radius: 10px;
+}
+/* .right-part-one,.right-part-two{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-row-gap: 20px;
+
+} */
+.right-part-one, .right-part-two{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    box-sizing: border-box;
+}
+.left-part-two{
+    display:flex;
+    flex-direction: column; 
+    margin-bottom: 10px;
+}
+
+.left-part-three {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+  }
+
+  #logoperson {
+    position: absolute;
+    left: 5px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the width as needed */
+    height: auto;
+}
+  
+  .error-message {
+  position: relative;
+  color: red;
+  display: none;
+  font-size: 10px;
+  margin-top: -10px; 
+  margin-left: 160px;
+  }
+  
+  .error-border {
+    border: 1px solid red;
+  }
+  
+
+
+
+
+.attribution{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Add responsive styles for smaller screens */
+    .main {
+      grid-template-columns: 100%; /* Set to one column for small screens */
+      width: 90%; /* Adjust width for small screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .attribution {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      margin-top: 80px;
+      background-color: hsl(0, 0%, 100%); /* Optional: add a background color */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr; /* Change to a single column for small screens */
+      gap: 5px; /* Adjust the gap as needed */
+      margin-top: 40px; /* Adjust the top margin as needed */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .right-part {
+      width:98%;
+    }
+  }
